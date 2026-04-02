@@ -4,16 +4,23 @@ namespace App\Http\Controllers;
 
 use App\Models\Kelas;
 use Illuminate\Http\Request;
+use App\Models\Siswa;
 use Illuminate\Support\Facades\Validator;
-
+use DB;
+    
 class KelasController extends Controller
 {
-    public function index()
-    {
-        $kelas = Kelas::latest()->get();
 
-        return view('backend.kelas.index', compact('kelas'));
-    }
+public function index()
+{
+    $kelas = DB::table('kelas')
+        ->where('jurusan', 'TBSM')
+        ->orderByDesc('id')
+        ->get();
+
+    return view('backend.kelas.index', compact('kelas'));
+}
+
 
     public function store(Request $request)
     {
@@ -47,6 +54,14 @@ class KelasController extends Controller
                 ->with('error', 'Terjadi kesalahan saat menambahkan kelas: '.$e->getMessage());
         }
     }
+   public function show(Kelas $kelas)
+{
+    $kelas->load('siswas');
+    $siswa = Siswa::latest()->get();
+    return view('backend.kelas.show', compact('kelas','siswa'));
+}
+
+
 
     public function update(Request $request, $id)
     {

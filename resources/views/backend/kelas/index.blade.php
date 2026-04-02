@@ -148,12 +148,13 @@
                                                     </h6>
                                                 </div>
                                             </div>
+                                      <td class="py-4">
+                                      <small class="text-muted">
+                                      <i class="ti ti-calendar me-1"></i>
+                                       {{ \Carbon\Carbon::parse($item->created_at)->format('d M Y, H:i') }}
+                                        </small>
                                         </td>
-                                        <td class="py-4">
-                                            <small class="text-muted">
-                                                <i class="ti ti-calendar me-1"></i>{{ $item->created_at->format('d M Y, H:i') }}
-                                            </small>
-                                        </td>
+
                                         <td class="py-4 text-center pe-4">
                                             <div class="btn-group" role="group">
                                                 <button type="button" class="btn btn-warning btn-sm"
@@ -167,6 +168,12 @@
                                                     onclick="deleteKelas({{ $item->id }}, '{{ addslashes($item->nama_kelas) }}')">
                                                     <i class="ti ti-trash"></i>
                                                 </button>
+                                                <a href="{{ route('kelas.show', $item->id) }}"
+   class="btn btn-info btn-sm"
+   title="Lihat Siswa">
+   <i class="ti ti-eye"></i>
+</a>
+
                                             </div>
 
                                             <!-- Hidden delete form -->

@@ -6,13 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Kelas extends Model
 {
-    protected $fillable = [
-        'nama_kelas',
-        'jurusan',
-    ];
+    protected $fillable = ['nama_kelas', 'jurusan'];
 
-    public function user()
+    public function siswas()
     {
-        return $this->hasMany(User::class);
+        return $this->hasMany(Siswa::class);
     }
 }
+

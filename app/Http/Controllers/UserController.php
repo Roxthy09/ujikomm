@@ -38,7 +38,6 @@ class UserController extends Controller
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users,email'],
-            'kelas_id' => ['required'],
             'isAdmin' => ['required', 'in:1,0'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ], [
@@ -46,7 +45,6 @@ class UserController extends Controller
             'email.required' => 'Email wajib diisi.',
             'email.email' => 'Format email tidak valid.',
             'email.unique' => 'Email sudah terdaftar.',
-            'kelas_id.required' => 'Kelas wajib diisi.',
             'isAdmin.required' => 'Role wajib dipilih.',
             'isAdmin.in' => 'Role harus admin atau user.',
             'password.required' => 'Password wajib diisi.',
@@ -58,7 +56,6 @@ class UserController extends Controller
             User::create([
                 'name' => $request->name,
                 'email' => $request->email,
-                'kelas_id' => $request->kelas_id,
                 'isAdmin' => $request->isAdmin,
                 'password' => Hash::make($request->password),
             ]);
@@ -97,7 +94,6 @@ class UserController extends Controller
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', Rule::unique('users')->ignore($user->id)],
-            'kelas_id' => ['required'],
             'isAdmin' => ['required', 'in:1,0'], // Changed from 'role' to 'isAdmin'
             'password' => ['nullable', 'string', 'min:8', 'confirmed'],
         ], [
@@ -109,7 +105,6 @@ class UserController extends Controller
             'email.email' => 'Format email tidak valid.',
             'email.max' => 'Email maksimal 255 karakter.',
             'email.unique' => 'Email sudah terdaftar.',
-            'kelas_id.required' => 'Kelas wajib diisi.',
             'isAdmin.required' => 'Role wajib dipilih.',
             'isAdmin.in' => 'Role harus admin atau user.',
             'password.string' => 'Password harus berupa teks.',
@@ -121,7 +116,6 @@ class UserController extends Controller
             $updateData = [
                 'name' => $request->name,
                 'email' => $request->email,
-                'kelas_id' => $request->kelas_id,
                 'isAdmin' => $request->isAdmin, // Changed from 'role' to 'isAdmin'
             ];
 
