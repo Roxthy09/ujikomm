@@ -288,73 +288,88 @@
     <section id="services" class="services section">
 
       <!-- Judul Seksi -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Layanan</h2>
-        <p>Lihat Layanan dari TestHive<br></p>
-      </div><!-- Akhir Judul Seksi -->
+   <div class="container section-title" data-aos="fade-up">
+  <h2>Layanan</h2>
+  <p>Layanan dari TestHive<br></p>
+</div><!-- Akhir Judul Seksi -->
 
-      <div class="container">
+<div class="container">
+  <div class="row gy-4">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <i class="bi bi-activity icon"></i>
-              <h3>Manajemen Ujian</h3>
-              <p>Atur jadwal, durasi, dan jenis ujian dengan mudah. Mendukung berbagai tipe soal seperti pilihan ganda, benar/salah, dan esai.</p>
-              <a href="#" class="read-more stretched-link"><span>Selengkapnya</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- Akhir Item Layanan -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <i class="bi bi-broadcast icon"></i>
-              <h3>Ujian Online Real-time</h3>
-              <p>Peserta dapat mengikuti ujian secara daring dengan waktu nyata dan sistem otomatis yang memantau setiap aktivitas.</p>
-              <a href="#" class="read-more stretched-link"><span>Selengkapnya</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- Akhir Item Layanan -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <i class="bi bi-easel icon"></i>
-              <h3>Dashboard & Statistik</h3>
-              <p>Lihat grafik performa siswa, jumlah ujian, dan rata-rata nilai melalui dashboard yang informatif dan interaktif.</p>
-              <a href="#" class="read-more stretched-link"><span>Selengkapnya</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- Akhir Item Layanan -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-red position-relative">
-              <i class="bi bi-bounding-box-circles icon"></i>
-              <h3>Manajemen Siswa & Kelas</h3>
-              <p>Kelola data siswa, kelas, dan pembagian peserta ujian sesuai kategori atau jenjang pendidikan dengan praktis.</p>
-              <a href="#" class="read-more stretched-link"><span>Selengkapnya</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- Akhir Item Layanan -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item item-indigo position-relative">
-              <i class="bi bi-calendar4-week icon"></i>
-              <h3>Penjadwalan Otomatis</h3>
-              <p>Ujian dapat dijadwalkan dan dibuka otomatis sesuai waktu yang ditentukan, termasuk batas waktu pengerjaan.</p>
-              <a href="#" class="read-more stretched-link"><span>Selengkapnya</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- Akhir Item Layanan -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <i class="bi bi-chat-square-text icon"></i>
-              <h3>Laporan & Analisis Hasil</h3>
-              <p>Hasil ujian langsung dirangkum dalam laporan lengkap per siswa, lengkap dengan analisis nilai dan grafik performa.</p>
-              <a href="#" class="read-more stretched-link"><span>Selengkapnya</span> <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- Akhir Item Layanan -->
-
-        </div>
-
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="service-item item-cyan position-relative">
+        <i class="bi bi-activity icon"></i>
+        <h3>Manajemen Ujian</h3>
+        <p>Atur jadwal, durasi, dan jenis ujian dengan mudah. Mendukung berbagai tipe soal seperti pilihan ganda, benar/salah, dan esai.</p>
+        <span class="read-more">
+         
+         
+        </span>
       </div>
+    </div><!-- Akhir Item Layanan -->
 
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+      <div class="service-item item-orange position-relative">
+        <i class="bi bi-broadcast icon"></i>
+        <h3>Ujian Online Real-time</h3>
+        <p>Peserta dapat mengikuti ujian secara daring dengan waktu nyata dan sistem otomatis yang memantau setiap aktivitas.</p>
+        <span class="read-more">
+         
+         
+        </span>
+      </div>
+    </div><!-- Akhir Item Layanan -->
+
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+      <div class="service-item item-teal position-relative">
+        <i class="bi bi-easel icon"></i>
+        <h3>Dashboard & Statistik</h3>
+        <p>Lihat grafik performa siswa, jumlah ujian, dan rata-rata nilai melalui dashboard yang informatif dan interaktif.</p>
+        <span class="read-more">
+         
+         
+        </span>
+      </div>
+    </div><!-- Akhir Item Layanan -->
+
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+      <div class="service-item item-red position-relative">
+        <i class="bi bi-bounding-box-circles icon"></i>
+        <h3>Manajemen Siswa & Kelas</h3>
+        <p>Kelola data siswa, kelas, dan pembagian peserta ujian sesuai kategori atau jenjang pendidikan dengan praktis.</p>
+        <span class="read-more">
+         
+         
+        </span>
+      </div>
+    </div><!-- Akhir Item Layanan -->
+
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+      <div class="service-item item-indigo position-relative">
+        <i class="bi bi-calendar4-week icon"></i>
+        <h3>Penjadwalan Otomatis</h3>
+        <p>Ujian dapat dijadwalkan dan dibuka otomatis sesuai waktu yang ditentukan, termasuk batas waktu pengerjaan.</p>
+        <span class="read-more">
+         
+         
+        </span>
+      </div>
+    </div><!-- Akhir Item Layanan -->
+
+    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+      <div class="service-item item-pink position-relative">
+        <i class="bi bi-chat-square-text icon"></i>
+        <h3>Laporan & Analisis Hasil</h3>
+        <p>Hasil ujian langsung dirangkum dalam laporan lengkap per siswa, lengkap dengan analisis nilai dan grafik performa.</p>
+        <span class="read-more">
+         
+         
+        </span>
+      </div>
+    </div><!-- Akhir Item Layanan -->
+
+  </div>
+</div>
     </section><!-- /Bagian Layanan -->
 
     <!-- Clients Section -->
@@ -362,53 +377,54 @@
     <!-- Contact Section -->
   </main>
 
-  <footer id="footer" class="footer">
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">TestHive</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>Jl. Pendidikan No. 108</p>
-            <p>Bandung, Jawa Barat 40123</p>
-            <p class="mt-3"><strong>Telepon:</strong> <span>+62 812 3456 7890</span></p>
-            <p><strong>Email:</strong> <span>support@testhive.id</span></p>
-          </div>
-        </div>
+ <footer id="footer" class="footer">
+  <div class="container footer-top">
+    <div class="row gy-4">
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Link Berguna</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Beranda</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Tentang Kami</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Layanan</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Syarat & Ketentuan</a></li>
-          </ul>
+      <div class="col-lg-4 col-md-6 footer-about">
+        <div class="d-flex align-items-center">
+          <span class="sitename">TestHive</span>
         </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Layanan Kami</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Ujian Online</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Bank Soal</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Penilaian Otomatis</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Laporan Hasil</a></li>
-          </ul>
+        <div class="footer-contact pt-3">
+          <p>Jl. Pendidikan No. 108</p>
+          <p>Bandung, Jawa Barat 40123</p>
+          <p class="mt-3"><strong>Telepon:</strong> <span>+62 812 3456 7890</span></p>
+          <p><strong>Email:</strong> <span>support@testhive.id</span></p>
         </div>
-
-        <div class="col-lg-4 col-md-12">
-          <h4>Ikuti Kami</h4>
-          <p>Dapatkan informasi terbaru seputar fitur dan pembaruan TestHive melalui media sosial kami.</p>
-        </div>
-
       </div>
-    </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Hak Cipta</span> <strong class="px-1 sitename">TestHive</strong> <span>Seluruh Hak Dilindungi</span></p>
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Link Berguna</h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <span>Beranda</span></li>
+          <li><i class="bi bi-chevron-right"></i> <span>Tentang Kami</span></li>
+          <li><i class="bi bi-chevron-right"></i> <span>Layanan</span></li>
+          <li><i class="bi bi-chevron-right"></i> <span>Syarat & Ketentuan</span></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Layanan Kami</h4>
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <span>Ujian Online</span></li>
+          <li><i class="bi bi-chevron-right"></i> <span>Bank Soal</span></li>
+          <li><i class="bi bi-chevron-right"></i> <span>Penilaian Otomatis</span></li>
+          <li><i class="bi bi-chevron-right"></i> <span>Laporan Hasil</span></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <h4>Ikuti Kami</h4>
+        <p>Dapatkan informasi terbaru seputar fitur dan pembaruan TestHive melalui media sosial kami.</p>
+      </div>
+
     </div>
-  </footer>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© <span>Hak Cipta</span> <strong class="px-1 sitename">TestHive</strong> <span>Seluruh Hak Dilindungi</span></p>
+  </div>
+</footer>
 
 
   <!-- Scroll Top -->

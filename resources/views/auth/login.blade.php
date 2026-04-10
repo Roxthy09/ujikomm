@@ -129,27 +129,31 @@
                 @enderror
               </div>
 
-              <div class="mb-4 form-password-toggle">
-                <div class="d-flex justify-content-between">
-                  <label class="form-label" for="password">Password</label>
-                </div>
-                <div class="input-group input-group-merge">
-                  <input
-                    type="password"
-                    id="password"
-                    class="form-control @error('password') is-invalid @enderror"
-                    name="password"
-                    required 
-                    autocomplete="current-password"
-                    placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" />
-                  <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
-                </div>
-                @error('password')
-                  <div class="text-danger mt-1 small">
-                    <strong>{{ $message }}</strong>
-                  </div>
-                @enderror
-              </div>
+       <div class="form-group position-relative">
+  <label for="password">Password</label>
+  <input id="password" type="password" class="form-control" name="password" required>
+  
+  <!-- Tombol melihat kata sandi -->
+  <span toggle="#password" class="toggle-password" style="position:absolute; right:10px; top:35px; cursor:pointer;">
+    👁️
+  </span>
+</div>
+
+<!-- Link lupa password -->
+
+
+<!-- JS Toggle Password -->
+<script>
+  const togglePassword = document.querySelector('.toggle-password');
+  const passwordInput = document.querySelector('#password');
+
+  togglePassword.addEventListener('click', function () {
+    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordInput.setAttribute('type', type);
+    // opsional: ubah ikon
+    this.textContent = type === 'password' ? '👁️' : '🙈';
+  });
+</script>
 
               <div class="mb-4">
                 <div class="d-flex justify-content-between align-items-center">
